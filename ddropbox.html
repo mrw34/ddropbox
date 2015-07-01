@@ -1,0 +1,9 @@
+<body>
+  <input type=file>
+  <br><br>
+  {{#each files}}
+  <a href="{{this.url}}" target=_blank>
+    <img src="{{#if isImage}}{{this.url}}{{else}}http://placehold.it/200?text={{this.name}}{{/if}}" height=200>
+  </a>
+  {{/each}}
+</body>
